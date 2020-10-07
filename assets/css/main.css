@@ -184,6 +184,10 @@ a {
   .footer__left-column {
     display: flex;
     flex-direction: column; }
+  .footer__middle-column {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .footer__bottom {
     width: 100%;
     border-top: 1px solid #B6B7A9; }

@@ -30,6 +30,12 @@
         flex-direction: column;
     }
 
+    &__middle-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__bottom {
         width: 100%;
         border-top: 1px solid #B6B7A9;
