@@ -159,9 +159,23 @@ a {
 
 .footer {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .footer__top {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; }
+  .footer__bottom {
+    border-top: 1px solid #B6B7A9; }
   .footer__left-column {
     display: flex;
     flex-direction: column; }
+
+@media only screen and (min-width: 375px) {
+  .footer__top {
+    flex-direction: row;
+    justify-content: space-between; } }
 
 /*# sourceMappingURL=main.css.map */
