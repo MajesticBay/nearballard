@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  flex-direction: column; }
+
+.top-screen {
+  height: 100vh;
+  background-color: rgba(56, 28, 218, 0.356); }
+
+.footer {
+  display: flex;
+  flex-direction: column; }
+  .footer__left-column {
+    display: flex;
+    flex-direction: column; }
+
+/*# sourceMappingURL=layout.css.map */
