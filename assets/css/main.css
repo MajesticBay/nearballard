@@ -152,6 +152,10 @@ table {
 a {
   text-decoration: none; }
 
+:root {
+  --color-primary: #fff;
+  --color-secondary: #263137; }
+
 .main {
   display: flex;
   flex-direction: column; }
@@ -169,7 +173,7 @@ a {
     width: 80%;
     display: flex;
     flex-direction: column;
-    padding-top: 50px; }
+    padding-top: 5rem; }
   .footer__bottom {
     border-top: 1px solid #B6B7A9; }
   .footer__left-column {
