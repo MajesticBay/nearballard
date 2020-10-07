@@ -155,7 +155,9 @@ a {
 :root {
   --color-primary: #fff;
   --color-secondary: #263137;
-  --color-accent: #FAFF00; }
+  --color-accent: #FAFF00;
+  --color-gray: #B6B7A9;
+  --color-black: #000; }
 
 .main {
   display: flex;
@@ -177,14 +179,24 @@ a {
     width: 80%;
     display: flex;
     flex-direction: column;
-    padding-top: 5rem; }
+    padding: 3rem 0; }
   .footer__left-column {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
   .footer__middle-column {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .footer__right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer__phone-number {
+    padding: 1rem 2rem;
+    background-color: var(--color-gray);
+    color: var(--color-black); }
   .footer__bottom {
     width: 100%;
     border-top: 1px solid #B6B7A9; }
