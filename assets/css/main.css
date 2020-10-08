@@ -184,7 +184,8 @@ body {
 .top-screen-left__inside-container {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 1.5rem; }
 .top-screen-left__logo {
   width: 90%; }
 .top-screen-left__motto {
@@ -208,6 +209,9 @@ body {
   color: var(--color-secondary); }
 .top-screen-left__phone-img {
   width: 1.5rem; }
+.top-screen-left__phone {
+  margin-left: .5rem;
+  font-weight: bold; }
 
 .footer {
   display: flex;
@@ -270,6 +274,7 @@ body {
   .top-screen-left__inside-container {
     width: 80%;
     margin-right: 2rem;
+    padding-bottom: 0;
     align-items: flex-start; }
   .top-screen-left__logo {
     width: 100%; }

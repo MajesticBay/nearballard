@@ -35,6 +35,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 1.5rem;
     }
 
     &__logo {
@@ -72,6 +73,11 @@ body {
 
     &__phone-img {
         width: 1.5rem;
+    }
+
+    &__phone {
+        margin-left: .5rem;
+        font-weight: bold;
     }
 }
 
@@ -161,6 +167,7 @@ body {
         &__inside-container {
             width: 80%;
             margin-right: 2rem;
+            padding-bottom: 0;
             // justify-content: flex-start;
             align-items: flex-start;
         }
