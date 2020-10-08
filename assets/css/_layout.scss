@@ -51,7 +51,12 @@ body {
         margin-top: 1rem;
     }
 
+    &__location-img {
+        width: 1.5rem;
+    }
+
     &__address {
+        margin-left: .5rem;
         color: var(--color-accent);
     }
 
@@ -63,6 +68,10 @@ body {
         border-radius: 3px;
         background-color: var(--color-accent);
         color: var(--color-secondary);
+    }
+
+    &__phone-img {
+        width: 1.5rem;
     }
 }
 
@@ -151,8 +160,22 @@ body {
     .top-screen-left {
         &__inside-container {
             width: 80%;
-            justify-content: flex-start;
+            margin-right: 2rem;
+            // justify-content: flex-start;
             align-items: flex-start;
+        }
+
+        &__logo {
+            width: 100%;
+        }
+
+        &__motto {
+            font-weight: bold;
+            font-size: 2.8rem;
+        }
+
+        &__address {
+            font-size: 1.6rem;
         }
     }
 
