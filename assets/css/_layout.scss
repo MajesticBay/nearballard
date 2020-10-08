@@ -4,8 +4,20 @@
 }
 
 .top-screen {
+    display: flex;
     height: 100vh;
-    background-color: rgba(56, 28, 218, 0.356);
+    background-color: rgba(138, 133, 161, 0.356);
+
+    &__top-screen-left {
+        display: flex;
+        width: 50%;
+    }
+
+    &__top-screen-right {
+        width: 50%;
+        background-image: url("../images/front.png");
+        background-position: center;
+    }
 }
 
 .footer {
