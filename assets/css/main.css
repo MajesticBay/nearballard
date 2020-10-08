@@ -188,13 +188,21 @@ body {
 .top-screen-left__logo {
   width: 90%; }
 .top-screen-left__motto {
+  margin-top: 1rem;
   color: var(--color-primary); }
 .top-screen-left__address-container {
-  display: flex; }
+  display: flex;
+  margin-top: 1rem; }
 .top-screen-left__address {
   color: var(--color-accent); }
 .top-screen-left__phone-container {
-  color: var(--color-accent); }
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  background-color: var(--color-accent);
+  color: var(--color-secondary); }
 
 .footer {
   display: flex;
@@ -247,9 +255,17 @@ body {
   .top-screen {
     flex-direction: row; }
     .top-screen__top-screen-left {
-      width: 50%; }
+      width: 50%;
+      position: static;
+      justify-content: flex-end;
+      align-items: center; }
     .top-screen__top-screen-right {
       width: 50%; }
+
+  .top-screen-left__inside-container {
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start; }
 
   .footer__top {
     grid-template-columns: repeat(3, 1fr);
