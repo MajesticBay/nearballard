@@ -193,7 +193,8 @@ a {
     justify-content: center;
     align-items: center; }
   .footer__address {
-    margin-left: .5rem; }
+    margin-left: .5rem;
+    color: var(--color-primary); }
   .footer__right-column {
     display: flex;
     flex-direction: column;
