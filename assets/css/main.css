@@ -160,11 +160,15 @@ a {
 
 .header {
   font-size: 2.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  color: var(--color-secondary); }
 
 .text {
   font-size: 1.8rem;
   color: var(--color-secondary); }
+
+.inline {
+  display: inline; }
 
 .bold {
   font-weight: bold; }
@@ -250,22 +254,39 @@ body {
 
 .map {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-top: 3rem; }
+
+.please-call-text {
+  margin-top: 3rem; }
+  .please-call-text__link {
+    color: var(--color-secondary); }
+
+.contact-us-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem; }
 
 .contact-form {
   display: grid;
-  gap: 1rem; }
+  gap: 1rem;
+  margin-top: 3rem; }
   .contact-form__message {
     height: 120px; }
 
-.send-button {
+.send-container {
   display: flex;
   justify-content: center; }
-  .send-button__text {
+  .send-container__text {
     width: 100%;
     padding: .8rem 2.5rem;
     background-color: var(--color-accent);
-    text-align: center; }
+    text-align: center;
+    border-radius: 3px; }
+  .send-container__text--arrow {
+    position: relative;
+    bottom: 1.5px; }
 
 .footer {
   display: flex;
@@ -339,18 +360,10 @@ body {
     font-size: 1.6rem; }
 
   .main {
-    padding: 4rem 10rem; }
+    padding: 4rem 14rem; }
 
   .location-container {
     flex-direction: row; }
-
-  .map {
-    width: 90%; }
-
-  .contact-us-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
 
   .contact-form {
     grid-template-columns: repeat(2, 1fr);
@@ -358,9 +371,9 @@ body {
     .contact-form__message {
       grid-area: message; }
 
-  .send-button {
+  .send-container {
     grid-area: send; }
-    .send-button__text {
+    .send-container__text {
       width: auto; }
 
   .footer__top {

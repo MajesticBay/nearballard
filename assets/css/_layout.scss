@@ -95,18 +95,35 @@ body {
 .map {
     width: 100%;
     height: auto;
+    margin-top: 3rem
+}
+
+.please-call-text {
+    margin-top: 3rem;
+
+    &__link {
+        color: var(--color-secondary);
+    }
+}
+
+.contact-us-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
 }
 
 .contact-form {
     display: grid;
     gap: 1rem;
+    margin-top: 3rem;
 
     &__message {
         height: 120px;
     }
 }
 
-.send-button {
+.send-container {
     display: flex;
     justify-content: center;
 
@@ -115,6 +132,12 @@ body {
         padding: .8rem 2.5rem;
         background-color: var(--color-accent);
         text-align: center;
+        border-radius: 3px;
+    }
+
+    &__text--arrow {
+        position: relative;
+        bottom: 1.5px;
     }
 }
 
@@ -224,22 +247,16 @@ body {
     }
 
     .main {
-        padding: 4rem 10rem;
+        padding: 4rem 14rem;
     }
 
     .location-container {
         flex-direction: row;
     }
 
-    .map {
-        width: 90%;
-    }
-
-    .contact-us-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+    // .map {
+    //     width: 90%;
+    // }
 
     .contact-form {
         grid-template-columns: repeat(2, 1fr);
@@ -251,8 +268,9 @@ body {
         }
     }
 
-    .send-button {
+    .send-container {
         grid-area: send;
+
         &__text {
             width: auto;
         }
