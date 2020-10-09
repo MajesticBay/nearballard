@@ -220,7 +220,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  padding: 4rem 10rem; }
+  padding: 2rem; }
 
 .location-container {
   display: grid; }
@@ -230,7 +230,13 @@ body {
   gap: 1rem; }
 
 .send-button {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
+  .send-button__text {
+    width: 100%;
+    padding: .8rem 2.5rem;
+    background-color: var(--color-accent);
+    text-align: center; }
 
 .footer {
   display: flex;
@@ -305,6 +311,20 @@ body {
 
   .location-container {
     flex-direction: row; }
+
+  .main {
+    padding: 4rem 10rem; }
+
+  .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name name" "contact contact" "message message" "send send"; }
+    .contact-form__message {
+      grid-area: message; }
+
+  .send-button {
+    grid-area: send; }
+    .send-button__text {
+      width: auto; }
 
   .footer__top {
     grid-template-columns: repeat(3, 1fr);
