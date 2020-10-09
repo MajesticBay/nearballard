@@ -159,12 +159,17 @@ a {
   --color-gray--border: #ccc; }
 
 .header {
+  display: inline-block;
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--color-secondary); }
+  color: var(--color-secondary);
+  position: relative; }
+
+.header--us {
+  display: inline-block; }
 
 .text {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: var(--color-secondary); }
 
 .inline {
@@ -187,6 +192,31 @@ a {
 .pointer {
   cursor: pointer; }
 
+.mark {
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--color-accent);
+  padding-bottom: 1.5rem; }
+  .mark--text-location {
+    top: 29px;
+    right: 30px;
+    padding-left: 1.5rem;
+    padding-right: .5rem; }
+  .mark--text-contact {
+    top: 29px;
+    left: -4px;
+    padding-left: 11rem; }
+  .mark--text-us {
+    top: 29px;
+    right: -10px;
+    padding-left: 4.5rem;
+    padding-right: 0.5rem; }
+
+@media only screen and (min-width: 400px) {
+  .text {
+    font-size: 1.8rem; } }
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
@@ -264,14 +294,12 @@ body {
 
 .contact-us-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin-top: 3rem; }
 
 .contact-form {
   display: grid;
-  gap: 1rem;
-  margin-top: 3rem; }
+  gap: 1rem; }
   .contact-form__message {
     height: 120px; }
 
@@ -363,9 +391,16 @@ body {
     padding: 4rem 14rem; }
 
   .location-container {
-    flex-direction: row; }
+    grid-template-columns: 1fr 3fr;
+    gap: 3rem; }
+
+  .contact-us-container {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "header contact-info" "contact-form contact-form";
+    gap: 3rem; }
 
   .contact-form {
+    grid-area: contact-form;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "name name" "contact contact" "message message" "send send"; }
     .contact-form__message {

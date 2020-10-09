@@ -19,7 +19,6 @@ body {
         width: 100%;
         background-color: var(--color-secondary--transparent);
         position: absolute;
-        // top: 0;
     }
 
     &__top-screen-right {
@@ -108,15 +107,13 @@ body {
 
 .contact-us-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     margin-top: 3rem;
 }
 
 .contact-form {
     display: grid;
     gap: 1rem;
-    margin-top: 3rem;
 
     &__message {
         height: 120px;
@@ -251,20 +248,23 @@ body {
     }
 
     .location-container {
-        flex-direction: row;
+        grid-template-columns: 1fr 3fr;
+        gap: 3rem;
     }
 
-    // .map {
-    //     width: 90%;
-    // }
+    .contact-us-container {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header contact-info" "contact-form contact-form";
+        gap: 3rem;
+    }
 
     .contact-form {
+        grid-area: contact-form;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "name name" "contact contact" "message message" "send send";
 
         &__message {
             grid-area: message;
-            // height: 130px;
         }
     }
 
