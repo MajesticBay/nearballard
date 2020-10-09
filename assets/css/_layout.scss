@@ -84,6 +84,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2rem;
 }
 
@@ -91,9 +92,18 @@ body {
     display: grid;
 }
 
+.map {
+    width: 100%;
+    height: auto;
+}
+
 .contact-form {
     display: grid;
     gap: 1rem;
+
+    &__message {
+        height: 120px;
+    }
 }
 
 .send-button {
@@ -213,12 +223,22 @@ body {
         }
     }
 
+    .main {
+        padding: 4rem 10rem;
+    }
+
     .location-container {
         flex-direction: row;
     }
 
-    .main {
-        padding: 4rem 10rem;
+    .map {
+        width: 90%;
+    }
+
+    .contact-us-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact-form {
@@ -227,6 +247,7 @@ body {
 
         &__message {
             grid-area: message;
+            // height: 130px;
         }
     }
 

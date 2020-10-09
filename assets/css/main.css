@@ -155,11 +155,19 @@ a {
   --color-secondary--transparent: rgba(38, 49, 55, 0.8);
   --color-accent: #FAFF00;
   --color-gray: #B6B7A9;
-  --color-black: #000; }
+  --color-black: #000;
+  --color-gray--border: #ccc; }
 
 .input {
   padding: 1rem 1rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: 1px solid var(--color-gray--border); }
+
+.input:focus {
+  outline: none; }
+
+.pointer {
+  cursor: pointer; }
 
 body {
   font-family: Arial, Helvetica, sans-serif; }
@@ -220,14 +228,21 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2rem; }
 
 .location-container {
   display: grid; }
 
+.map {
+  width: 100%;
+  height: auto; }
+
 .contact-form {
   display: grid;
   gap: 1rem; }
+  .contact-form__message {
+    height: 120px; }
 
 .send-button {
   display: flex;
@@ -309,11 +324,19 @@ body {
   .top-screen-left__address {
     font-size: 1.6rem; }
 
+  .main {
+    padding: 4rem 10rem; }
+
   .location-container {
     flex-direction: row; }
 
-  .main {
-    padding: 4rem 10rem; }
+  .map {
+    width: 90%; }
+
+  .contact-us-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
 
   .contact-form {
     grid-template-columns: repeat(2, 1fr);
