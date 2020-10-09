@@ -91,6 +91,15 @@ body {
     display: grid;
 }
 
+.contact-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.send-button {
+    display: flex;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
