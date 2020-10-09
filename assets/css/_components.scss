@@ -1,3 +1,21 @@
+.header {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .input {
     padding: 1rem 1rem;
     border-radius: 3px;
