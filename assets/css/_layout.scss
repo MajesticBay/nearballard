@@ -16,6 +16,7 @@ body {
 
     &__top-screen-left {
         display: flex;
+        justify-content: center;
         width: 100%;
         background-color: var(--color-secondary--transparent);
         position: absolute;
@@ -205,7 +206,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 700px) {
     .top-screen {
         flex-direction: row;
 
