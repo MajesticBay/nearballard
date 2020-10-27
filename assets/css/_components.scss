@@ -4,15 +4,16 @@
 
 .header {
     display: inline-block;
+    width: fit-content;
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--color-secondary);
     position: relative;
 }
 
-.header--us {
-    display: inline-block;
-}
+// .header--us {
+//     display: inline-block;
+// }
 
 .text {
     font-size: 1.2rem;
@@ -56,6 +57,7 @@
     padding-bottom: 1.5rem;
 
     &--text-location {
+        width: 110%;
         top: 29px;
         right: 30px;
         padding-left: 1.5rem;

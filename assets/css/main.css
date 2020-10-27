@@ -160,13 +160,11 @@ a {
 
 .header {
   display: inline-block;
+  width: fit-content;
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--color-secondary);
   position: relative; }
-
-.header--us {
-  display: inline-block; }
 
 .text {
   font-size: 1.2rem;
