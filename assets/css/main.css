@@ -198,10 +198,9 @@ a {
   background-color: var(--color-accent);
   padding-bottom: 1.5rem; }
   .mark--text-location {
+    width: 116%;
     top: 29px;
-    right: 30px;
-    padding-left: 1.5rem;
-    padding-right: .5rem; }
+    right: -8px; }
   .mark--text-contact {
     top: 29px;
     left: -4px;
