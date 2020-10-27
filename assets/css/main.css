@@ -167,6 +167,7 @@ a {
   position: relative; }
 
 .text {
+  line-height: 150%;
   font-size: 1.2rem;
   color: var(--color-secondary); }
 
@@ -243,15 +244,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
 .top-screen-left__logo {
   width: 90%; }
 .top-screen-left__motto {
-  margin-top: 1rem;
+  margin: 1rem;
   color: var(--color-primary); }
 .top-screen-left__address-container {
-  display: flex;
-  margin-top: 1rem; }
+  display: flex; }
 .top-screen-left__location-img {
   width: 1.5rem; }
 .top-screen-left__address {
@@ -381,6 +382,7 @@ body {
   .top-screen-left__logo {
     width: 100%; }
   .top-screen-left__motto {
+    margin: 1rem 0 1rem 0;
     font-weight: bold;
     font-size: 2.8rem; }
   .top-screen-left__address {
