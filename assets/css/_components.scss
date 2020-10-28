@@ -76,8 +76,18 @@
     }
 }
 
+.schedule-time-text {
+    display: block;
+}
+
 @media only screen and (min-width: 400px) {
     .text {
         font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .schedule-time-text {
+        display: inline;
     }
 }

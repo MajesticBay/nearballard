@@ -117,6 +117,7 @@ body {
     display: grid;
     gap: 1rem;
     font-size: 1.6rem;
+    margin-top: 1rem;
 
     &__message {
         height: 120px;
@@ -218,19 +219,11 @@ body {
     }
 
     .main {
-        padding: 4rem 14rem;
+        padding: 4rem 8rem;
     }
 
     .map {
         height: 450px;
-    }
-
-    .send-container {
-        grid-area: send;
-
-        &__text {
-            width: auto;
-        }
     }
 
     .footer {
@@ -254,6 +247,10 @@ body {
 }
 
 @media only screen and (min-width: 1210px) {
+    .main {
+        padding: 4rem 14rem;
+    }
+
     .top-screen {
         flex-direction: row;
 
@@ -320,6 +317,14 @@ body {
 
         &__message {
             grid-area: message;
+        }
+    }
+
+    .send-container {
+        grid-area: send;
+
+        &__text {
+            width: auto;
         }
     }
 }

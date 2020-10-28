@@ -212,9 +212,15 @@ a {
     padding-left: 4.5rem;
     padding-right: 0.5rem; }
 
+.schedule-time-text {
+  display: block; }
+
 @media only screen and (min-width: 400px) {
   .text {
     font-size: 1.8rem; } }
+@media only screen and (min-width: 700px) {
+  .schedule-time-text {
+    display: inline; } }
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
@@ -300,7 +306,8 @@ body {
 .contact-form {
   display: grid;
   gap: 1rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-top: 1rem; }
   .contact-form__message {
     height: 120px; }
 
@@ -372,15 +379,10 @@ body {
     text-align: center; }
 
   .main {
-    padding: 4rem 14rem; }
+    padding: 4rem 8rem; }
 
   .map {
     height: 450px; }
-
-  .send-container {
-    grid-area: send; }
-    .send-container__text {
-      width: auto; }
 
   .footer__top {
     grid-template-columns: repeat(3, 1fr);
@@ -392,6 +394,9 @@ body {
   .footer__copyright {
     padding: 1.5rem 0; } }
 @media only screen and (min-width: 1210px) {
+  .main {
+    padding: 4rem 14rem; }
+
   .top-screen {
     flex-direction: row; }
     .top-screen__top-screen-left {
@@ -436,6 +441,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "name name" "contact contact" "message message" "send send"; }
     .contact-form__message {
-      grid-area: message; } }
+      grid-area: message; }
+
+  .send-container {
+    grid-area: send; }
+    .send-container__text {
+      width: auto; } }
 
 /*# sourceMappingURL=main.css.map */
