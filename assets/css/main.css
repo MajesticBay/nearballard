@@ -287,6 +287,8 @@ body {
 
 .location-container {
   display: grid; }
+  .location-container__text {
+    margin-top: 1rem; }
 
 .map {
   width: 100%;
