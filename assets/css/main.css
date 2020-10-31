@@ -166,6 +166,9 @@ a {
   color: var(--color-secondary);
   position: relative; }
 
+.content-text {
+  margin-top: 1rem; }
+
 .text {
   line-height: 150%;
   font-size: 1.2rem;
@@ -287,8 +290,6 @@ body {
 
 .location-container {
   display: grid; }
-  .location-container__text {
-    margin-top: 1rem; }
 
 .map {
   width: 100%;
