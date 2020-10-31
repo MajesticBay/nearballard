@@ -95,3 +95,9 @@
         display: inline;
     }
 }
+
+@media only screen and (min-width: 1210px) {
+    .content-text {
+        margin-top: 0;
+    }
+}

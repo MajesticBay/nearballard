@@ -224,6 +224,9 @@ a {
 @media only screen and (min-width: 700px) {
   .schedule-time-text {
     display: inline; } }
+@media only screen and (min-width: 1210px) {
+  .content-text {
+    margin-top: 0; } }
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
@@ -254,11 +257,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
+  padding: 1.5rem; }
 .top-screen-left__logo {
-  width: 90%; }
+  width: 100%; }
 .top-screen-left__motto {
+  width: 100%;
   margin: 1rem;
   color: var(--color-primary); }
 .top-screen-left__address-container {
@@ -415,8 +418,6 @@ body {
     margin-right: 2rem;
     padding-bottom: 0;
     align-items: flex-start; }
-  .top-screen-left__logo {
-    width: 100%; }
   .top-screen-left__motto {
     margin: 1rem 0 1rem 0;
     font-weight: bold;
